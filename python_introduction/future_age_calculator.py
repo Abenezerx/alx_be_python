@@ -1,5 +1,5 @@
 #define variable
-current_age = input('How old are you?')
+current_age = int(input('How old are you?'))
 
 #calculation
 future_age = current_age + 27
