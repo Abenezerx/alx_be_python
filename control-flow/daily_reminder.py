@@ -15,8 +15,6 @@ match priority:
         print("Invalid priority entered. Please use 'high', 'medium', or 'low'.")
 if time_bound == 'yes':
     reminder += ' that requires immediate attention today!'
-elif time_bound == 'no' and priority == 'high':
-    reminder += ' since it is not time bound, do not be negligent'
 else:
     reminder += ' Consider completing it when you have free time.'
 
