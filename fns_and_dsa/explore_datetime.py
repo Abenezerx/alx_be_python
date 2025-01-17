@@ -1,3 +1,4 @@
+
 import datetime
 #part 1
 def display_current_datetime ():
@@ -16,3 +17,6 @@ def main():
     days_to_add = int(input("Enter the number of days to add to the current date: "))
     future_date = calculate_future_date(days_to_add) 
     print(f"Future date: {future_date}")
+
+    if __name__ == "__main__":
+        main()
