@@ -1,5 +1,4 @@
-datetime
-import datetime
+from datetime import datetime, timedelta
 #part 1
 def display_current_datetime ():
     current_date = datetime.datetime.now()
