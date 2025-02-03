@@ -10,18 +10,18 @@ class Book:
         return f"Book('{self.title}', '{self.author}')"
 
 class EBook(Book):
-    def __init__(self, file_size):
+    def __init__(self, title, author, file_size):
         self.fie_size = file_size
         super().__init__(title, author)
 
 class PrintBook(Book):
-    def __init__(self, page_count):
+    def __init__(self, title, author, page_count):
         self.page_count = page_count
         super().__init__(title, author)
 
 class Library:
     def __init__(self):
-        self.books[]
+        self.books = []
 
     def add_book(self, book):
         self.books.append(book)
