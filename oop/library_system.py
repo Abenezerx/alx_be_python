@@ -14,10 +14,22 @@ class EBook(Book):
         self.fie_size = file_size
         super().__init__(title, author)
 
+    def __str__(self):
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
+
+    def __repr__(self):
+        return f"EBook('{self.title}', '{self.author}', {self.file_size})"
+
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
         self.page_count = page_count
         super().__init__(title, author)
+
+    def __str__(self):
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
+
+    def __repr__(self):
+        return f"PrintBook('{self.title}', '{self.author}', {self.page_count})"
 
 class Library:
     def __init__(self):
